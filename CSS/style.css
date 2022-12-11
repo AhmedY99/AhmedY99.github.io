@@ -660,6 +660,8 @@ scale: 1.05;
     background: #2196F3;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 .contact-wrap{
     display: flex;
@@ -668,7 +670,7 @@ scale: 1.05;
 .contact-form span{
     margin-left: 20px;
     color: #0D6EFD;
-    display: none;
+    display: block;
 }
 /*footer*/
 .last{
@@ -713,28 +715,7 @@ scale: 1.05;
 .copy-last{
     text-decoration: underline;
 }
-.box{
-    transform: translateX(400%);
-    transition: transform .5s linear;
-}
-.box:nth-of-type(even){
-    transform: translateX(-400%);
-}
-.box.show{
-    transform: translateX(0);
-}
-/* animation*/
 
-@keyframes fadeIn{
-    from{
-        transform: translateX(200px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 /*media quaries*/
 @media(max-width:1000px) {
     nav ul {
@@ -932,6 +913,12 @@ scale: 1.05;
     }
     .socail-icon{
         margin-bottom: 30px;
+    }
+    .contact-wrap{
+        flex-direction: column;
+    }
+    .submit-btn{
+        margin: 20px 0;
     }
 
 }

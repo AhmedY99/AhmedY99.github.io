@@ -188,6 +188,7 @@ function validation(){
     messageError.innerHTML = text;
     return false;
   }
+  alert("form sent successfull");
   return true;
 }
 
