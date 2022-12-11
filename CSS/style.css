@@ -999,6 +999,14 @@ scale: 1.05;
     #slide-menu {
         top: 18.5%;
     }
+    .about-container{
+        width: 100%;
+    }
+    .about-container p{
+        width: 100%;
+        letter-spacing: 3px;
+        padding: 0 0 8px 0;
+    }
     .about-heading{
         padding-left: 0;
         }
