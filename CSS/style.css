@@ -710,7 +710,7 @@ scale: 1.05;
     padding-bottom: 30px;
     color: #fff;
 }
-.social-media{
+.copy-write{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -721,16 +721,27 @@ scale: 1.05;
     font-weight: 700;
     font-family: 'Alkalami', sans-serif;
 }
-.socail-media-icon a{
+
+.last-icon a{
     text-decoration: none;
     color: #fff;
 }
-.socail-media-icon .fa{
-    font-size: 30px;
+.last-icon a .fa{
+    position: relative;
+    top: 5px;
+    font-size: 40px;
     padding: 0 10px;
     cursor: pointer;
 }
-.socail-media-icon .fa:hover{
+.last-icon .fa:hover{
+    color: #b7b57c;
+}
+.last-icon a .uil{
+    font-size: 40px;
+    padding: 0px;
+    cursor: pointer;
+}
+.last-icon .uil:hover{
     color: #b7b57c;
 }
 .log-last{
@@ -739,7 +750,7 @@ scale: 1.05;
 .desc-last{
     max-width: 500px;
 }
-.copy-write{
+.copy{
     text-align: center;
     cursor: pointer;
 }
@@ -937,7 +948,7 @@ scale: 1.05;
         text-align: center;
         
     }
-    .social-media{
+    .copy-write{
         flex-direction: column;
         padding-left: 10px;
        
