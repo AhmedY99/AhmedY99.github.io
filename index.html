@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+    <link rel="icon" type="image/jpg" href="assests/images/Logo.gif">
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkalami&family=Oswald:wght@600&family=Poppins:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="page">
+    <!--Navigation-->
+    <div id="slide-menu" onclick="myFuction()" class="navList">
+        <ul id="slide-menuholder">
+
+            <li> <a href="#home" class="active">Home</a> </li>
+            <li><a href="#about" >About</a></li>
+            <li><a href="#portfolio" >Projects</a></li>
+            <li><a href="#contact" >Contact </a></li>
+
+        </ul>
+    </div>
+    <nav id="navLog">
+        <div class="log">
+            <a href="index.html"><img src="assests/images/Logo.gif" alt="Logo"></a>
+        </div>
+        <div id="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="nav-list">
+            <li data-nav="home"> <a href="#home" class="active">Home</a> </li>
+            <li data-nav="about"><a href="#about">About</a></li>
+            <li data-nav="portfolio"><a href="#portfolio">Projects</a></li>
+            <li data-nav="contact"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <label class="switch">
+            <input type="checkbox" checked id="mode">
+            <span class="switch-container" id="switch-container"></span>
+            <span class="round" id="round"></span>
+        </label>
+
+    </nav>
+    <section id="base" style="height: 100vh; display: none;">
+
+    </section>
+    <!--Mid content-->
+    <section class="banner box1 show1" id="home">
+        <div class="home-container">
+            <div class="home-data">
+                <div class="home-title">
+                    <h1 class="home-description">
+                        Ahmed Y
+                    </h1>
+                    <div class="cont-desc">
+                        <h2>I'm <span class="auto-type"> </span></h2>
+                    </div>
+                </div>
+                <a download href="assests/images/AY_Resume8.pdf" class="button home-button">Download Resume</a>
+            </div>
+
+            <div class="mouse-scroll">
+                <a href="#last">
+                    <div class="mouse">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--About Me-->
+    <main>
+        <section class="box1" id="about">
+            <div class="heading about-heading">
+                <h2 class="section-heading">About Me</h2>
+            </div>
+
+            <div id="sectionCont" class="top_Section">
+                <div class="about-container">
+                    <div class="about-data">
+                        <h2>Get to know me!</h2>
+                        <p class="about-description">
+                            Hi, I am passionate about developing and creating web interfaces.</p>
+                        <p class="about-description"> Exceptionally
+                            creative and dependable entry-level web developer with outstanding
+                            knowledge of HTML5, CSS, JavaScript and Java.</p>
+
+                        <p class="about-description" id="desc1"> My motivating factor is understanding people, having
+                            empathy for the
+                            challenges they face, and aiding and abetting them in coming up with solutions across
+                            the efficient system and perceptive interaction.
+                        </p>
+                        <div class="about-btn">
+                            <a class="even" href="#contact"> Contact Me</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="about-container">
+                    <div>
+                        <img class="about-img" src="assests/images/image7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-container skill-top">
+                    <h2 class="section-subtitle"> My Skills</h2>
+                    <div class="skill-container">
+                        <div class="skill-data">
+                            <h4 class="skill-name" id="html">
+                                HTML
+                            </h4>
+                        </div>
+                        <div class="skill-data">
+
+                            <h4 class="skill-name">
+                                CSS
+                            </h4>
+
+
+
+                        </div>
+                        <div class="skill-data">
+
+                            <h4 class="skill-name">
+                                JavaScript
+                            </h4>
+
+                        </div>
+                        <div class="skill-data">
+
+                            <h4 class="skill-name">
+                                Java
+                            </h4>
+                        </div>
+                        <div class="skill-data">
+
+                            <h4 class="skill-name" id="skill-name">
+                                Github
+                            </h4>
+                        </div>
+                        <div class="skill-data">
+
+                            <h4 class="skill-name" id="skill-name">
+                                Bootstrap
+                            </h4>
+                        </div>
+                        <div class="skill-data">
+
+                            <h4 class="skill-name" id="skill-name">
+                                PhotoShop
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Portfolio-->
+        <section class="box1" id="portfolio">
+            <div class="heading portfolio-heading">
+                <h2 class="title_portfolio section-heading">Portfolio</h2>
+                <h4 class="subtitle-section">Most recent work</h4>
+            </div>
+            <div class="portfolio">
+                <div class="portfolio_container">
+                    <!--Portfolio1-->
+                    <div class="portfolio-content swiper-slide">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assests/images/slideimage3.jpg" alt="image" class="portfolio-image odd">
+                        <div class="portfolio-data">
+                            <div class="title">Crown Restuarant</div>
+                            <p class="description">
+                                Crown is a web template I created for the restaurant and food industry that provides a better user interface on the web that people use for their restaurant business, building trust 
+                                and engagement with their customers to make it interactive and easy to use while making an online order. 
+                            </p>
+                            <a href="page.html" class="flex-button btn">Demo <i
+                                    class="fa fa-arrow-right button-icon"></i></a>
+                        </div>
+                    </div>
+                    <!--Portfolio-->
+                    <div class="portfolio-content swiper-slide">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assests/images/slideimage1__480.jpg" alt="image" class="portfolio-image odd">
+                        <div class="portfolio-data">
+                            <div class="title">Golder Shop Design</div>
+                            <p class="description">
+                                Golder Shop Design is a web template I created for the shoes store that provides a better user interface on
+                                the web that people use for their business, building trust
+                                and engagement with their customers to make it interactive and easy to use while making an online order.
+                            </p>
+                            <a href="shoesShop.html" class="flex-button btn">Demo <i
+                                    class="fa fa-arrow-right button-icon"></i></a>
+                        </div>
+                    </div>
+                    <!--Portfolio3-->
+                    <div class="portfolio-content swiper-slide">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assests/images/slideimage2.jpg" alt="image" class="portfolio-image odd">
+                        <div class="portfolio-data">
+                            <div class="title">Juba Design</div>
+                            <p class="description">
+                                Juba design is a web template I created for the small business that provides a better user interface on
+      the web that people use for their business, building trust
+      and engagement with their customers to make it interactive and easy to use. Its responsive Website and adaptable to all devices, with UI components.
+                            </p>
+                            <a href="juba.html" class="flex-button btn">Demo <i
+                                class="fa fa-arrow-right button-icon"></i></a>
+                        </div>
+                      
+                    </div>
+                    <!--Add Arrow-->
+                    <div class="slide left" onclick="plusSlides(-1)">
+                        <i class="fa fa-angle-left slide-icon"></i>
+                    </div>
+                    <div class="slide right" onclick="plusSlides(1)">
+                        <i class="fa fa-angle-right slide-icon"></i>
+                    </div>
+                </div>
+
+                <!---Add Pagination-->
+                <div class="dot">
+                    <span onclick="currentSlide(1)"></span>
+                    <span onclick="currentSlide(2)"></span>
+                    <span onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+        </section>
+        <section class="contact-container box1" id="contact">
+            <div class="contact-holder">
+                <h2>Contact Me</h2>
+                <div class="contact-text">
+                    <div class="cont-desc"></div>
+                    <div class="cont-desc2"></div>
+                    <div class="cont-desc"></div>
+
+                </div>
+            </div>
+            <form action="#" class="contact-form" id="contact-form">
+                <input type="text" placeholder="Your Name" name="name" class="nome">
+                <input type="email" placeholder="Email Address....." name="email" class="email">
+                <textarea name="message" cols="30" rows="10" placeholder="Write Your Message Here......."
+                    class="message"></textarea>
+                <div class="contact-wrap">
+                    <button type="submit" class="submit-btn"> Send Message </button>
+                    <span>Sending your message....</span>
+                </div>
+            </form>
+        </section>
+    </main>
+    <div class="last" id="last">
+        <footer>
+            <div class="social-media">
+                <div class="socail-icon">
+                    <div class="socail-header">
+                        <h2>Connect</h2>
+                    </div>
+                    <div class="socail-media-icon">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/AhmedY99"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="text-last">
+                    <div class="log log-last">
+                        <div class="socail-header">
+                            <h2>Ahmed Y</h2>
+                        </div>
+                    </div>
+                    <div class="desc-last">
+                        <p>A Frontend focused Web Developer building the Frontend of Websites and web design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boder" style="width: 90%; height: 1px; background-color: #eee; margin:20px 10px;">
+            </div>
+            <div class="copy-write">
+                <p>© Copyright 2022. Made by <span class="copy-last">Ahmed Yussuf</span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="JavaScript/script.js"></script>
+    
+</body>
+
+</html>

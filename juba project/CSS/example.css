@@ -1,0 +1,478 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+#log h1{
+    
+        padding: 8px;
+        border-radius: 8px;
+        margin: 0;
+        font-size: 64px;
+        font-family: 'Alkalami' sans-serif;
+        font-weight: bolder;
+        transform: rotate(-10deg);
+    
+}
+#log{
+    display: flex;
+    height: 100%;
+    padding: 10px 32px;
+    align-items: center;
+    transition: 0.4s;
+}
+p{
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+.active{
+    color: rgb(115, 115, 225);
+}
+main{
+    margin: auto;
+}
+/* inputs*/
+input, textarea{
+    height: 32px;
+    padding: 0 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    box-shadow: inset 8px 3px 18px -4px rgba(0,0,0, .2);
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+/* banner*/
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0,0,0,.2)url(../image/image4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: #fff;
+    height: 100vh;
+
+}
+img{
+    opacity: .2;
+}
+#banner h1{
+    padding: 8px;
+    background-color: rgba(255,0,0,0.8);
+    border-radius: 8px;
+    margin: 0;
+    font-size: 64px;
+    font-family: 'Roboto' sans-serif;
+}
+#banner h3{
+    padding: 0 26px;
+    background-color: #000;
+    border-radius: 8px;
+    font-size: 24px;
+}
+/* search box*/
+#search-box{
+    position: fixed;
+    right: 40px;
+    top: 80px;
+    width: 400px;
+    cursor: pointer;
+    pointer-events: none;
+    z-index: 50;
+    transition: 0.4s;
+}
+#search-box input{
+    height: 48px;
+    width: 100%;
+}
+/*navigation*/
+nav{
+    height: 128px;
+    background: #202125;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Alkalami', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+    width: 100%;
+
+}
+nav a{
+    padding: 0 32px;
+    color: #eee;
+    transition: 0.4s;
+
+}
+nav a:hover{
+    text-decoration: none;
+    color: #4a4a;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+
+}
+#menu-icon{
+    height: 100%;
+    font-size: 28px;
+    padding: 0 4px;
+    color: #fff;
+    /*display: flex;*/
+    display: none;
+    align-items: center;
+    z-index: 100;
+}
+/* search icon*/
+#search-icon{
+    color: #fff;
+    padding: 0 32px;
+    cursor: pointer;
+    transition: 0.4s;
+    z-index: 100;
+}
+#search-icon:hover{
+    color: #4a4a;
+}
+/* slide-menu*/
+#slide-menu{
+    display: none;
+    background-color: #2d3436;
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 100px;
+    width: 0;
+    text-align: center;
+    right: 0;
+   
+    
+}
+#slide-menu input{
+   width: 85%; 
+   padding: 8px;
+   font-family: 'Poppins', serif;
+   font-size: 20px;
+   text-align: center;
+}
+#slide-menu ul{
+    list-style: none;
+    padding: 0 32px;
+}
+#slide-menu ul li{
+    
+    padding: 8px;
+   
+    
+}
+#slide-menu a{
+    font-size: 20px;
+    font-family: 'Alkalami', serif;
+    color: #fff;
+}
+/*section*/
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-heading{
+    font-size: 32px;
+    font-family: 'Poppins', serif;
+    border-left: 3px solid #222;
+    border-right: 3px solid #222;
+    transition: 0.4s;
+    display: inline-block;
+    padding: 4px 32px;
+    cursor: pointer;
+}
+.section-heading:hover{
+    background-color: #4a4a;
+    padding: 4px 48px;
+}
+/* section source*/
+#source p{
+    padding: 8px;
+    text-align: center;
+}
+#source .btn-readmore{
+    margin: 10px;
+    text-align: center;
+}
+/* card*/
+.card-image{
+    transition: 0.4s;
+}
+.card-image:hover{
+    box-shadow: 0 10px 6px -6px #777;
+}
+.card .discription{
+    padding: 0 8px;
+}
+/*buton readmore*/
+.btn-readmore{
+    padding: 8px 24px;
+    border: 3px solid #222;
+    transition: .4s;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+
+}
+.btn-readmore:hover{
+    background-color: #4a4a;
+    text-decoration: none;
+    padding: 8px 50px 8px 24px;
+    color: #fff;
+}
+/* footers*/
+ footer{
+    background-color: #222;
+    padding: 8px;
+    color: #eee;
+    display: flex;
+ }
+ footer a{
+    color: #fff;
+
+ }
+ footer #left{
+    flex: 1;
+    border-right: 1px solid #4a4a;
+    padding-left: 32px;
+ }
+ footer #left ul{
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;  
+ }
+ footer #right{
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+ }
+ footer #social-media a .fa-facebook,
+ footer #social-media a .fa-twitter,
+ footer #social-media a .fa-instagram,
+ footer #social-media a .fa-youtube,
+ footer #social-media a .fa-github{
+    color: #fff;
+    transition: 0.4s;
+ }
+ footer #social-media ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+ }
+ footer #social-media li{
+    font-size: 48px;
+    padding: 16px;
+    transition: 0.4s;
+ }
+ footer #social-media ul li .fa-facebook:hover{
+    color: #4a4a;
+ }
+ footer #social-media ul li .fa-twitter:hover{
+    color: #dada;
+ }
+ 
+ footer #social-media ul li .fa-instagram:hover{
+    color: #5e5e;
+ }
+ 
+ footer #social-media ul li .fa-youtube:hover{
+    color: #bbadbb;
+ }
+ footer #social-media ul li .fa-github:hover{
+    color: #533737;
+ }
+ /*Blog page design*/
+ .page-heading{
+    font-size: 30px;
+    font-family: 'Alkalami', sans-serif;
+    border-left: 3px solid #222;
+    border-right: 3px solid #222;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 2px 32px;
+    margin-top: 140px;
+
+ }
+ .page-heading:hover{
+    padding: 4px 48px;
+    background-color: #4a4a;
+ }
+ .card-meta{
+    color: rgb(192, 120, 120);
+    font-size: 14px;
+    padding-left: 8px;
+    font-family: 'Poppins',sans-serif;
+ }
+ .card-meta a{
+    color: #333;
+ }
+ .pagination{
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+ }
+ .pagination a{
+    border-top: 3px solid #fff ;
+    display: inline-block;
+    padding: 8px 16px;
+    transition: .4s;
+ }
+ .pagination a:hover{
+    text-decoration: none;
+    border-top: 3px solid #333;
+ }
+ /*project page design*/
+ #post-container{
+    display: flex;
+ }
+ #blogpost{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-left: 1px solid #888;
+ }
+ #blogpost .card{
+    width: 100%;
+ }
+ #blogpost .card-image:hover{
+    box-shadow: none;
+ }
+ /*sidebar*/
+ #sidebar{
+   background-color: rgb(58, 44, 44);
+   flex: 1; 
+   padding: 8px 16px;
+   color: #fff;
+   box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75);
+
+ }
+ .card-meta-blogpost{
+    color: #333;
+    font-size: 14px;
+    padding: 16px;
+    font-family: 'Oswlad',sans-serif;
+ }
+.card-meta-blogpost a{
+   color: #333; 
+}
+/*comment section*/
+#coment-section{
+    border-top: 2px solid #eee;
+    padding: 8px;
+}
+/*media quaries*/
+@media(max-width:900px){
+    nav ul{
+        display: none;
+    }
+    #menu-icon{
+        display: flex;
+    }
+    #search-box{
+        display: none;
+    }
+    #slide-menu {
+        display: block;
+    }
+    #blogpost{
+        width: 100%;
+        border-left: 0;
+    }
+    #sidebar{
+        display: none;
+    }
+}
+@media(max-width:718px){
+    main{
+        width: 95%;
+    }
+    section{
+        flex-direction: column;
+    }
+    .card, .card-image img{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer #left{
+        flex: 1;
+        border-right: 0;
+        padding-left: 0;
+    }
+    footer #right{
+        background-color: #ccc;
+        color: #222;
+    }
+    footer #right a{
+        color: #222;
+    }
+    footer #social-media a .fa-facebook,
+ footer #social-media a .fa-twitter,
+ footer #social-media a .fa-instagram,
+ footer #social-media a .fa-youtube,
+ footer #social-media a .fa-github{
+    color: #222;
+    transition: 0.4s;
+ }
+
+}
+@media(max-width:600px){
+    main{
+        width: 100%;
+    }
+    h1{
+        font-size: 42px;
+    }
+    #banner h3{
+        font-size: 20px;
+    }
+    .card{
+        text-align: center;
+    }
+
+
+}
+@media(min-width:720px){
+    main{
+        width: 95%;
+    }
+    .card{
+        width: 45%;
+    }
+    .card .card-image img{
+        width: 100%;
+    }
+}
+@media(min-width:720px){
+    main{
+        width: 85%;
+    }
+}
