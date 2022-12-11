@@ -189,7 +189,7 @@ function validation(){
     return false;
   }
   return true;
-  location.reload();
+  window.location.reload();
 }
 
 
