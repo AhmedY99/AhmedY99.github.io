@@ -1005,6 +1005,11 @@ scale: 1.05;
         .about-btn{
             display: block;
         }
+        .copy-write{
+            flex-direction: column;
+            padding-left: 10px;
+           
+        }
 }
 @media screen and (max-width: 400px) {
     #slide-menu {
@@ -1128,6 +1133,11 @@ scale: 1.05;
             font-size: 16px;
             letter-spacing: 3px;
             text-align: center;
+        }
+        .copy-write{
+            flex-direction: column;
+            padding-left: 10px;
+           
         }
         
     
