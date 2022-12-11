@@ -1104,6 +1104,12 @@ scale: 1.05;
         .mouse-scroll{
             top: 230px;
         }
+        .succuss-container p{
+            width: 350px;
+            font-size: 16px;
+            letter-spacing: 3px;
+            text-align: center;
+        }
         
     
 }
