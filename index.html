@@ -242,14 +242,14 @@
 
                 </div>
             </div>
-            <form action="#" class="contact-form" id="contact-form">
-                <input type="text" placeholder="Your Name" name="name" class="nome">
-                <input type="email" placeholder="Email Address....." name="email" class="email">
+            <form action="https://formsubmit.co/hajji20999@gmail.com" method="POST" class="contact-form" id="contact-form" onsubmit="return validation()">
+                <input type="text" placeholder="Your Name" name="name" id="name" class="nome">
+                <input type="email" placeholder="Email Address....." name="email" id="email" class="email">
                 <textarea name="message" cols="30" rows="10" placeholder="Write Your Message Here......."
-                    class="message"></textarea>
+                    class="message" id="message"></textarea>
                 <div class="contact-wrap">
                     <button type="submit" class="submit-btn"> Send Message </button>
-                    <span>Sending your message....</span>
+                    <span id="messageError"></span>
                 </div>
             </form>
         </section>
