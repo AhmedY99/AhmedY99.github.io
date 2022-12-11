@@ -188,7 +188,7 @@ function validation(){
     messageError.innerHTML = text;
     return false;
   }
-  return false;
+  return true;
 }
 
 
