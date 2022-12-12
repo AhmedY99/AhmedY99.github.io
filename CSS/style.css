@@ -16,9 +16,6 @@ body {
     scroll-behavior: smooth;
 
 }
-.log img:hover{
-    opacity: 1;
-}
 
 .dark-mode {
     background-color: #212529;
@@ -118,15 +115,22 @@ nav {
 }
 .log{
     padding-top: 10px;
+    box-shadow: 4px 4p #04AA6D;
 }
 .log img {
 max-width: 60px;
 border-radius: 50%;
-background-position: center;
-backdrop-filter: initial;
-background-color: transparent;
+object-fit: contain;
+mix-blend-mode: luminosity;
+
 
 }
+.log img:hover{
+    mix-blend-mode: luminosity;
+   
+   
+}
+
 
 nav a {
     padding: 8px 16px;
@@ -381,9 +385,7 @@ nav ul li:hover::before, nav .nav-list li.active::before {
 .about-img:hover{
 scale: 1.05;
 }
-.log img{
-    opacity: .2;
-}
+
 
 .about-img:hover {
     box-shadow: 0 10px 6px -6px #777;

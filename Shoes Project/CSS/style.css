@@ -325,7 +325,9 @@ style for cart label and buttons
    border-radius: 4px;
 }
 /*Style Home page*/
-  
+ img{
+    object-fit: contain;
+ } 
 
 .section-container{
     border-top: 8px solid #4a4a;
@@ -341,6 +343,7 @@ style for cart label and buttons
 .section-container img{
     width: 100%;
     height: 500px;
+    object-fit: cover;
 }
 #animation-holder{
     font-size: 30px;
@@ -599,7 +602,7 @@ footer{
         overflow: hidden;
     }
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
     nav{
         align-items: center;
     }
