@@ -759,6 +759,9 @@ scale: 1.05;
 .copy-last{
     text-decoration: underline;
 }
+#slide-menu a:hover{
+    color: #2196F3;
+}
 
 /*media quaries*/
 @media(max-width:1000px) {
@@ -875,7 +878,6 @@ scale: 1.05;
     main {
         width: 95%;
     }
-
     #log h1 {
         font-size: 30px;
         color: #eeee;
@@ -964,6 +966,9 @@ scale: 1.05;
     .submit-btn{
         margin: 20px 0;
     }
+    #slide-menu {
+        top: 28%;
+    }
 
 }
 @media screen and (max-width: 450px) {
@@ -983,7 +988,7 @@ scale: 1.05;
         left: -3.0rem;
     }
     #slide-menu {
-        top: 20%;
+        top: 22%;
     }
     .about-heading{
         padding-left: 0;
